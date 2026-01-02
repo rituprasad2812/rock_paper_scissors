@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
-        <div class="playcontainer">
+        <div class="container">
             <h1 class="heading">Rock Paper Scissors</h1>
-            <p class="choosingtag">Choose your style</p>
-            <div class="handcontainer">
-                <img src="option rock.png" alt="rock" class="hand">
-                <img src="option paper.png" alt="paper" class="hand">
-                <img src="option scissor.png" alt="scissor" class="hand">
-            </div>
-            <div class="playerchoice">
-                <h3>Player <span>v/s</span> Computer</h3>
-                <div class="choicehand">
-                <img src="option rock.png" alt="rock">
-                <img src="option rock.png" alt="rock">
+            <div class="choosingstyle">
+                <p>Choose your style</p>
+                <div class="stylecontainer">
+                    <div><img src="option rock.png" alt="rock" ></div>
+                    <div><img src="option paper.png" alt="paper" ></div>
+                    <div><img src="option scissor.png" alt="scissor" ></div>
                 </div>
             </div>
-            <h3 style="text-align: center">Scores
-                <div class="scorecontainer">
-                <p class="score">You: 0</p>
-                <p class="score">Comp: 0</p>
+            <div class="battlecontainer">
+                <h3>Player <span>v/s</span> Computer</h3>
+                <div class="playercompchoice">
+                    <div><img src="option rock.png" alt="playeroption"></div>
+                    <div><img src="option rock.png" alt="compoption"></div>
+                </div>
             </div>
-            </h3>
+            <div class="scorecontainer">
+                <h3 style="text-align: center">Scores</h3>
+                <div class="scores">
+                    <p class="score">You: 0</p>
+                    <p class="score">Comp: 0</p>
+                </div>
+            </div>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
+
 </html>

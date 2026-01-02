@@ -7,8 +7,8 @@ body{
     font-family: Slackey;
 }
 
-.playcontainer{
-    height: 450px;
+.container{
+    height: 420px;
     width: 500px;
     background-color: #54ecefff;
     border-radius: 10px;
@@ -16,24 +16,26 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 0 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
 }
 
 
-.playcontainer .heading{
+.container .heading{
     text-align: center;
     font-size: 1.99rem;
+    margin: 0;
+    line-height: 2;
 }
 
-.playcontainer p{
+
+.container .choosingstyle p{
+    margin: 0;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 0;
-    font-size: 1.22rem;
+    font-size: 1.29rem;
+    line-height: 3;
 }
 
-.playcontainer .handcontainer{
-    text-align: center;
+.container .stylecontainer{
     height: 170px;
     display: flex;
     justify-content: space-evenly;
@@ -41,7 +43,7 @@ body{
 }
 
 
-.playcontainer .handcontainer .hand{
+.container .stylecontainer img{
     height: 130px;
     width: 130px;
     border-radius: 100%;
@@ -50,54 +52,54 @@ body{
 
 }
 
-.playcontainer .handcontainer .hand:hover{
+.container .stylecontainer img:hover{
     border-color: black;
     cursor: pointer;
 }
 
-.playcontainer .scorecontainer{
-    height: 60px;
-    width: 465px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 7px;  
-    position: absolute;
-    bottom: 25px;
-}
-
-.playcontainer .scorecontainer .score{
+.container .scorecontainer h3{
+    line-height: 2;
     margin: 0;
 }
 
-.playcontainer .scorecontainer{
-    border: 3px solid;
-    border-radius: 10px;
-    padding: 15px;
+.container .scorecontainer{
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    right: 30px;
+
 }
 
-.playcontainer .playerchoice{
-    height: 225px;
-    padding-top: 10px;
+.container .scorecontainer .scores{
+    border: 3px solid black;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container .battlecontainer{
     display: none;
 }
 
-.playcontainer .playerchoice h3{
+.container .battlecontainer h3{
     text-align: center;
-    word-spacing: 45px;
+    word-spacing: 50px;
+    margin: 0;
+    margin-top: 40px;
+    line-height: 1;
 }
 
-.playcontainer .playerchoice img{
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    object-fit: cover;  
-}
-
-.playcontainer .playerchoice .choicehand{
+.container .battlecontainer .playercompchoice{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    gap: 35px;
+    gap: 60px;
+    padding: 20px;
+}
+
+.container .battlecontainer img{
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+    border-radius: 100%;
 }
