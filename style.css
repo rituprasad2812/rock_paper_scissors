@@ -40,6 +40,10 @@ body{
     align-items: center;
 }
 
+.playcontainer .handcontainer, .playcontainer .choosingtag{
+    display: none;
+}
+
 .playcontainer .handcontainer .hand{
     height: 130px;
     width: 130px;
@@ -67,9 +71,29 @@ body{
     margin: 0;
 }
 
-.playcontainer h3{
+.playcontainer .scorecontainer{
     border: 3px solid;
     border-radius: 10px;
     padding: 15px;
 }
 
+.playcontainer .playerchoice{
+    height: 225px
+}
+
+.playcontainer .playerchoice h3{
+    text-align: center;
+}
+
+.playcontainer .playerchoice img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    object-fit: cover;  
+}
+
+.playcontainer .playerchoice .choicehand{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
