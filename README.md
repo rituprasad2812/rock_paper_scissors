@@ -11,7 +11,7 @@ A simple Rock Paper Scissors game built using HTML, CSS and JavaScript.
 - Clean, Playful and Simple UI and Animation.
 - Scores reset only when the page is refreshed or closed.
 
-##Technologies Used
+## Technologies Used
 - HTML
 - CSS
 - JavaScript
