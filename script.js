@@ -4,14 +4,25 @@ let battleground = document.querySelector(".battlecontainer");
 
 let player = document.querySelector(".playerchoice img");
 let computer = document.querySelector(".compchoice img");
+let userscore = document.getElementById("userscore");
+let compscore = document.getElementById("compscore");
+
+let replaybtn = document.querySelector(".replaybtn");
 
 let computerchoices = ["rock", "paper", "scissor"];
+
+let userScore = 0;
+let compScore = 0;
 
 let showwinner = (userwin) => {
     if (userwin === true) {
         console.log("you win");
+        userScore++;
+        userscore.innerText = `You: ${userScore}`;
     } else {
         console.log("you loose");
+        compScore++;
+        compscore.innerText = `Comp: ${compScore}`;
     }
 }
 
@@ -41,6 +52,20 @@ for (let i = 0; i < hands.length; i++) {
                 }
                 showwinner(userwin);
             }
+
         }, 1000);
+
+        replaybtn.addEventListener("click", ()=>{
+            battleground.classList.remove("active");
+            battleground.style.display = "none";  
+
+            playground.style.display = "block";
+            replaybtn.style.opacity = 0;
+
+        })
+
+        setTimeout(() =>{
+            replaybtn.style.opacity = 1;
+        }, 2000);
     })
 }
