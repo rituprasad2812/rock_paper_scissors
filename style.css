@@ -79,7 +79,8 @@ body{
 }
 
 .container .battlecontainer{
-    display: none;
+    opacity: 0;
+    transition: all 0.1s linear;
 }
 
 .container .battlecontainer h3{
@@ -102,4 +103,8 @@ body{
     width: 130px;
     object-fit: cover;
     border-radius: 100%;
+}
+
+.container .battlecontainer.active{
+    opacity: 1;
 }
