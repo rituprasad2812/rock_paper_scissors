@@ -37,7 +37,7 @@ for (let i = 0; i < hands.length; i++) {
             battleground.classList.add("active");
             player.src = clicked;
             let randomchoice = computerchoices[Math.floor(Math.random() * computerchoices.length)];
-            computer.src = `${randomchoice}.png`;
+            computer.src = `images/${randomchoice}.png`;
 
             if (playerchoices === randomchoice) {
                 console.log("draw game");
