@@ -18,3 +18,7 @@ A simple Rock Paper Scissors game built using HTML, CSS and JavaScript.
 
 ## Acknowledgement
 This project was built as a learning excercise to strengthen JavaScript fundamentals and DOM manipulation skills.
+
+## Play the Game 🎮
+
+[![Play Rock-Paper-Scissors](https://img.shields.io/badge/Play-Now-blue)](https://your-game-link.com)
